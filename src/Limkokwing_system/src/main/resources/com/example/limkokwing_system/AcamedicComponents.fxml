@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.limkokwing_system.AcamedicComponents">
+   <children>
+      <Pane layoutX="184.0" layoutY="91.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="94.0" layoutY="46.0" prefHeight="342.0" prefWidth="443.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane layoutX="-15.0" layoutY="-12.0" opacity="0.5" prefHeight="363.0" prefWidth="470.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button layoutX="164.0" layoutY="310.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="85.0" text="Add" />
+                        <Button layoutX="299.0" layoutY="306.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="85.0" text="View" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="92.0" layoutY="28.0" text="Academic Details">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="47.0" layoutY="85.0" text="Acamedic Year">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox layoutX="183.0" layoutY="86.0" prefWidth="150.0" />
+                  <Label layoutX="47.0" layoutY="143.0" prefHeight="27.0" prefWidth="104.0" text="Semester">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox layoutX="183.0" layoutY="144.0" prefWidth="150.0" />
+                  <Label layoutX="47.0" layoutY="198.0" prefHeight="27.0" prefWidth="104.0" text="Class">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="183.0" layoutY="199.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Label layoutX="47.0" layoutY="251.0" text="Module">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="183.0" layoutY="252.0" prefHeight="25.0" prefWidth="150.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

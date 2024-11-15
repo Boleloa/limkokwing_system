@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.limkokwing_system.Admin">
+    <children>
+        <Pane prefHeight="400.0" prefWidth="603.3333333333334" style="-fx-background-color: darkgrey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="400.0" prefWidth="142.0" style="-fx-background-color: darkgrey;">
+                    <children>
+                        <Button fx:id="btnlecturer" layoutY="215.0" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: blue;" text="Lecturer" />
+                        <Button fx:id="btnprincipal" layoutY="309.0" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: blue;" text="Principal Lecturer" />
+                        <Button fx:id="btnadmin" layoutY="125.0" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: blue;" text="admin" />
+                    </children>
+                </Pane>
+                <BarChart fx:id="BarChart" barGap="2.0" categoryGap="5.0" layoutX="149.0" layoutY="67.0" prefHeight="150.0" prefWidth="162.0" style="-fx-background-color: yellow;" title="Student Enrolled">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </BarChart>
+                <PieChart fx:id="PieChart" layoutX="393.0" layoutY="67.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: blue;" title="New Lecturers" />
+                <LineChart fx:id="LineChart" layoutX="149.0" layoutY="242.0" prefHeight="142.0" prefWidth="200.0" style="-fx-background-color: pink;" title="Enrollment Distribution">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </LineChart>
+                <StackedBarChart fx:id="StackedBarChart" layoutX="393.0" layoutY="242.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: orange;" title="Academic Trends">
+                    <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" />
+                    </yAxis>
+                </StackedBarChart>
+            </children>
+        </Pane>
+        <Pane layoutY="-4.0" prefHeight="65.0" prefWidth="603.0" style="-fx-background-color: purple;">
+            <children>
+                <Label layoutX="-1.0" prefHeight="65.0" prefWidth="460.0" text="Limkokwing Academic System" textFill="#f2f4ef">
+                    <font>
+                        <Font size="34.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btnlogout" layoutX="459.0" layoutY="1.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="142.0" style="-fx-background-color: pink;" text="Log Out">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
